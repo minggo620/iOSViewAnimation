@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="aW0-mZ-wq6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="aW0-mZ-wq6">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -48,7 +48,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="iqT-rH-b4C">
-                            <rect key="frame" x="0.0" y="308" width="320" height="44"/>
+                            <rect key="frame" x="0.0" y="264" width="320" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
@@ -196,30 +196,6 @@
                                             <constraints>
                                                 <constraint firstItem="X1q-2O-xk2" firstAttribute="leading" secondItem="Hf4-Io-ZtP" secondAttribute="leadingMargin" constant="8" id="lX6-xQ-dLd"/>
                                                 <constraint firstItem="X1q-2O-xk2" firstAttribute="centerY" secondItem="Hf4-Io-ZtP" secondAttribute="centerY" id="vxU-Rz-9Sj"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="jSE-4t-T8e">
-                                        <rect key="frame" x="0.0" y="264" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jSE-4t-T8e" id="eAF-kt-Bgj">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="拉伸内容(contentStretch)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLB-7W-zvi">
-                                                    <rect key="frame" x="16" y="11" width="238" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="9Bd-aG-80G"/>
-                                                        <constraint firstAttribute="width" constant="238" id="qeK-24-uF8"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="oLB-7W-zvi" firstAttribute="leading" secondItem="eAF-kt-Bgj" secondAttribute="leadingMargin" constant="8" id="Ihm-dW-db2"/>
-                                                <constraint firstItem="oLB-7W-zvi" firstAttribute="centerY" secondItem="eAF-kt-Bgj" secondAttribute="centerY" id="ogr-Gz-omm"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
