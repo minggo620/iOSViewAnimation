@@ -112,20 +112,32 @@
     }];
 }
 
-//iOS6.0之后过期
--(void)contentStrech{
+-(void)springAnimation{
+    CGRect originalRect = self.anView.frame;
+    CGRect rect = CGRectMake(self.anView.frame.origin.x-20, self.anView.frame.origin.y-120, 120, 80);
     
-    CGRect originalContentStrech = self.anView.contentStretch;
-    CGRect rect = CGRectMake(0, 0, self.anView.frame.size.width*0.2, self.anView.frame.size.height*0.8);
-    
-    [UIView animateWithDuration:2 animations:^{
-        self.anView.contentStretch = rect;
+    [UIView animateWithDuration:1 delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:4 options:UIViewAnimationOptionCurveLinear animations:^{
+        self.anView.frame = rect;
     } completion:^(BOOL finished) {
-        [UIView animateWithDuration:2 animations:^{
-            self.anView.contentStretch = originalContentStrech;
+        [UIView animateWithDuration:1 delay:1 usingSpringWithDamping:0.5 initialSpringVelocity:4 options:UIViewAnimationOptionCurveLinear animations:^{
+           self.anView.frame = originalRect;
+        } completion:^(BOOL finished) {
+            
         }];
     }];
     
+}
+
+-(void)transitionAnimation{
+    [UIView transitionWithView:self.anView duration:2.0 options:UIViewAnimationOptionTransitionFlipFromLeft animations:^{
+        //self.anView.backgroundColor = [UIColor blueColor];
+    } completion:^(BOOL finished) {
+        [UIView transitionWithView:self.anView duration:2.0 options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
+            //self.anView.backgroundColor = [UIColor greenColor];
+        } completion:^(BOOL finished) {
+            
+        }];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -146,7 +158,9 @@
     }else if (self.type==5){
         [self changeBackground];
     }else if (self.type==6){
-        [self contentStrech];
+        [self springAnimation];
+    }else if (self.type==7){
+        [self transitionAnimation];
     }
 }
 
