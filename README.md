@@ -237,13 +237,13 @@
 
 就UIView的动画而言，UIViewKeyframeAnimationOptions紧在Keyframes，其余的都是UIViewAnimationOptions。  
 
-###总结和扩展  
+###十.总结和扩展  
 **1.UIView动画主要是变化UIView的自带属性**  
 **2.UIView动画可以有很多种方式实现同一效果**  
 **3.Spring动画iOS7.0以上才有**  
 **4.UIViewKeyframeAnimationOptions用着Keyframes动画，其余都用UIViewAnimationOptions枚举**  
 这就以上UIView Animation的动画的基础内容了，节目到了尾声。嘿，卓先生，Tom先生停下来，给大家说byebye啦。谢谢大家，让我们再次以热烈的掌声感谢卓先生和Tom先生。谢谢~~ 
-###七.源码地址
+###十一.源码地址
 #####*[https://github.com/minggo620/iOSViewAnimation](https://github.com/minggo620/iOSViewAnimation)*
 ######谢谢收看这期大型扯淡实用技术类节目，《小明讲故事》。"Tom老师，你对我眨眼什么意思？"，“你们中国的《喜洋洋和灰太狼》捉了多少集？” 
 ***
