@@ -9,25 +9,32 @@
 #import "AnimationDetailViewController.h"
 
 @interface AnimationDetailViewController ()
-@property (weak, nonatomic) IBOutlet UIView *anView;
+@property (weak, nonatomic) IBOutlet UIImageView *anView;
 @end
 
 @implementation AnimationDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setImage];
+}
+
+-(void)setImage{
+   
+    [self.anView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"tom%i",self.type+1]]];
+    [self.anView setBackgroundColor:[UIColor greenColor]];
     
 }
 
 -(void)changeFrame{
     
     CGRect originalRect = self.anView.frame;
-    CGRect rect = CGRectMake(self.anView.frame.origin.x-20, self.anView.frame.origin.y-120, 120, 80);
+    CGRect rect = CGRectMake(self.anView.frame.origin.x-20, self.anView.frame.origin.y-120, 160, 80);
     
-    [UIView animateWithDuration:2 animations:^{
+    [UIView animateWithDuration:1 animations:^{
         self.anView.frame = rect;
     } completion:^(BOOL finished) {
-        [UIView animateWithDuration:2 animations:^{
+        [UIView animateWithDuration:1 animations:^{
             self.anView.frame = originalRect;
         }];
         
@@ -39,7 +46,7 @@
     
     CGRect originalBounds = self.anView.bounds;
     //尽管这个rect的x，y跟原始的不同，动画也只是改变了宽高
-    CGRect rect = CGRectMake(0, 0, 120, 80);
+    CGRect rect = CGRectMake(0, 0, 300, 120);
     
     [UIView animateWithDuration:1 animations:^{
         self.anView.bounds = rect;
@@ -54,12 +61,12 @@
 -(void)changeCenter{
     
     CGPoint originalPoint = self.anView.center;
-    CGPoint point = CGPointMake(self.anView.center.x, self.anView.center.y+80);
+    CGPoint point = CGPointMake(self.anView.center.x, self.anView.center.y-170);
     
-    [UIView animateWithDuration:2 animations:^{
+    [UIView animateWithDuration:0.3 animations:^{
         self.anView.center = point;
     } completion:^(BOOL finished) {
-        [UIView animateWithDuration:2 animations:^{
+        [UIView animateWithDuration:1 animations:^{
             self.anView.center = originalPoint;
         }];
         
@@ -82,10 +89,10 @@
 }
 
 -(void)alpha{
-    [UIView animateWithDuration:2 animations:^{
-        self.anView.alpha = 0.3;
+    [UIView animateWithDuration:1 animations:^{
+        self.anView.alpha = 0.2;
     } completion:^(BOOL finished) {
-        [UIView animateWithDuration:2 animations:^{
+        [UIView animateWithDuration:1 animations:^{
             self.anView.alpha = 1;
         }];
 
@@ -107,6 +114,9 @@
         [UIView addKeyframeWithRelativeStartTime:3.0 / 4 relativeDuration:1.0 / 4 animations:^{
             self.anView.backgroundColor = [UIColor colorWithRed:0.619 green:0.037 blue:0.6719 alpha:1.0];
         }];
+        [UIView addKeyframeWithRelativeStartTime:3.0 / 4 relativeDuration:1.0 / 4 animations:^{
+            self.anView.backgroundColor = [UIColor whiteColor];
+        }];
     } completion:^(BOOL finished) {
         NSLog(@"动画结束");
     }];
@@ -114,9 +124,9 @@
 
 -(void)springAnimation{
     CGRect originalRect = self.anView.frame;
-    CGRect rect = CGRectMake(self.anView.frame.origin.x-20, self.anView.frame.origin.y-120, 120, 80);
+    CGRect rect = CGRectMake(self.anView.frame.origin.x-80, self.anView.frame.origin.y, 120, 120);
     
-    [UIView animateWithDuration:1 delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:4 options:UIViewAnimationOptionCurveLinear animations:^{
+    [UIView animateWithDuration:0.4 delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:4 options:UIViewAnimationOptionCurveLinear animations:^{
         self.anView.frame = rect;
     } completion:^(BOOL finished) {
         [UIView animateWithDuration:1 delay:1 usingSpringWithDamping:0.5 initialSpringVelocity:4 options:UIViewAnimationOptionCurveLinear animations:^{
@@ -163,7 +173,5 @@
         [self transitionAnimation];
     }
 }
-
-
 
 @end

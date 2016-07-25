@@ -69,7 +69,7 @@
                                                         <constraint firstAttribute="width" constant="160" id="pAa-SR-7qV"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -93,7 +93,7 @@
                                                         <constraint firstAttribute="height" constant="21" id="GXZ-cI-fdR"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -117,7 +117,7 @@
                                                         <constraint firstAttribute="height" constant="21" id="obb-Tf-m1W"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -141,7 +141,7 @@
                                                         <constraint firstAttribute="width" constant="160" id="zcj-Zn-rwQ"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -165,7 +165,7 @@
                                                         <constraint firstAttribute="height" constant="21" id="PSa-nU-iGG"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -189,7 +189,7 @@
                                                         <constraint firstAttribute="width" constant="254" id="l5I-V9-2DV"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -213,7 +213,7 @@
                                                         <constraint firstAttribute="height" constant="21" id="qsR-kl-ZCP"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -237,7 +237,7 @@
                                                         <constraint firstAttribute="width" constant="254" id="aJK-ob-MSE"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -293,16 +293,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e5n-TN-yTv">
-                                <rect key="frame" x="120" y="244" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.35686274509999999" green="0.84705882349999995" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="YRV-fq-CoY"/>
-                                    <constraint firstAttribute="height" constant="80" id="e52-9B-j5X"/>
-                                </constraints>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKQ-s0-tsW">
-                                <rect key="frame" x="103" y="428" width="114" height="35"/>
+                                <rect key="frame" x="103" y="448" width="114" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="114" id="945-BX-FUX"/>
                                     <constraint firstAttribute="height" constant="35" id="aWX-bs-yVG"/>
@@ -315,18 +307,25 @@
                                     <action selector="click:" destination="ETX-IS-bWj" eventType="touchUpInside" id="ykM-Qz-ScV"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tom2" translatesAutoresizingMaskIntoConstraints="NO" id="vwE-kC-XMz">
+                                <rect key="frame" x="100" y="224" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Df0-td-Be5"/>
+                                    <constraint firstAttribute="height" constant="120" id="ooR-ly-Kzc"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="e5n-TN-yTv" firstAttribute="centerY" secondItem="nXN-Ay-5wE" secondAttribute="centerY" id="Nnr-sD-jBp"/>
+                            <constraint firstItem="dKQ-s0-tsW" firstAttribute="top" secondItem="vwE-kC-XMz" secondAttribute="bottom" constant="104" id="1Kj-A1-T8c"/>
                             <constraint firstItem="dKQ-s0-tsW" firstAttribute="centerX" secondItem="nXN-Ay-5wE" secondAttribute="centerX" id="OoD-TT-mMC"/>
-                            <constraint firstItem="dKQ-s0-tsW" firstAttribute="top" secondItem="e5n-TN-yTv" secondAttribute="top" constant="184" id="mhD-RJ-RCS"/>
-                            <constraint firstItem="e5n-TN-yTv" firstAttribute="centerX" secondItem="nXN-Ay-5wE" secondAttribute="centerX" id="ul9-JU-PGn"/>
+                            <constraint firstItem="vwE-kC-XMz" firstAttribute="centerY" secondItem="nXN-Ay-5wE" secondAttribute="centerY" id="PwZ-1l-VEy"/>
+                            <constraint firstItem="vwE-kC-XMz" firstAttribute="centerX" secondItem="nXN-Ay-5wE" secondAttribute="centerX" id="liW-Yv-5JD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vk2-WH-yzI"/>
                     <connections>
-                        <outlet property="anView" destination="e5n-TN-yTv" id="Fh0-Zv-aeu"/>
+                        <outlet property="anView" destination="vwE-kC-XMz" id="AkL-gc-vpn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e8P-uy-khk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -334,4 +333,7 @@
             <point key="canvasLocation" x="1265" y="-234"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tom2" width="217" height="216"/>
+    </resources>
 </document>
