@@ -3,7 +3,7 @@
 [![Support](https://img.shields.io/badge/support-iOS%207%2B%20-blue.svg?style=flat)](https://www.apple.com/nl/ios/)&nbsp;
 [![Travis](https://img.shields.io/travis/rust-lang/rust.svg)]()
 [![GitHub release](https://img.shields.io/github/release/qubyte/rubidium.svg)]()
-[![Github All Releases](https://img.shields.io/badge/download-6M Total-green.svg)](https://github.com/minggo620/iOSMutipleThread/archive/master.zip)   
+[![Github All Releases](https://img.shields.io/badge/download-6M Total-green.svg)](https://github.com/minggo620/iOSViewAnimation/master.zip)   
 “Action！”，欢迎收看这期大型扯谈实用类技术节目，《小明讲故事》，大家好我是小明！  
 
 有人会这么问，“小明，no zuo no die，你觉得哪个城市的人最作？”。“我觉得~伦敦的人比较作，相当作，作得有风格，作得有国际范！因为~有一个伦敦人叫Charlie Chaplin，中文名叫查理 卓别林，小名叫作不停，作界的佛爷啊，嘻嘻~”。    
@@ -156,7 +156,7 @@
     	}];
 	}
 
-###七.Spring动画    
+###七.Spring动画（iOS7.0起）    
 ####1.展示效果
 ![animation7.gif](http://upload-images.jianshu.io/upload_images/1252638-be761fff07d7abe1.gif?imageMogr2/auto-orient/strip)  
 ####2.Show Code   
@@ -193,7 +193,7 @@
 	}
 	
 ###九.关于参数option选择说明
-####1.参数option（UIViewAnimationOptions）方式多样选择
+####1.UIViewAnimationOptions
 	
 	UIViewAnimationOptionLayoutSubviews            //进行动画时布局子控件
 	UIViewAnimationOptionAllowUserInteraction      //进行动画时允许用户交互
@@ -220,7 +220,7 @@
 	UIViewAnimationOptionTransitionFlipFromTop     //转场，从上向下旋转翻页
 	UIViewAnimationOptionTransitionFlipFromBottom  //转场，从下向上旋转翻页
 
-###2.参数option（UIViewKeyframeAnimationOptions）方式多样选择
+###2.UIViewKeyframeAnimationOptions
 	UIViewAnimationOptionLayoutSubviews           //进行动画时布局子控件
 	UIViewAnimationOptionAllowUserInteraction     //进行动画时允许用户交互
 	UIViewAnimationOptionBeginFromCurrentState    //从当前状态开始动画
@@ -235,4 +235,17 @@
 	UIViewKeyframeAnimationOptionCalculationModeCubic      //运算模式 :平滑
 	UIViewKeyframeAnimationOptionCalculationModeCubicPaced //运算模式 :平滑均匀
 
-就UIView的动画而言，UIViewKeyframeAnimationOptions紧在Keyframes，其余的都是UIViewAnimationOptions。
+就UIView的动画而言，UIViewKeyframeAnimationOptions紧在Keyframes，其余的都是UIViewAnimationOptions。  
+
+###总结和扩展  
+**1.UIView动画主要是变化UIView的自带属性**  
+**2.UIView动画可以有很多种方式实现同一效果**  
+**3.Spring动画iOS7.0以上才有**  
+**4.UIViewKeyframeAnimationOptions用着Keyframes动画，其余都用UIViewAnimationOptions枚举**  
+这就以上UIView Animation的动画的基础内容了，节目到了尾声。嘿，卓先生，Tom先生停下来，给大家说byebye啦。谢谢大家，让我们再次以热烈的掌声感谢卓先生和Tom先生。谢谢~~ 
+###七.源码地址
+#####*[https://github.com/minggo620/iOSViewAnimation](https://github.com/minggo620/iOSViewAnimation)*
+######谢谢收看这期大型扯淡实用技术类节目，《小明讲故事》。"Tom老师，你对我眨眼什么意思？"，“你们中国的《喜洋洋和灰太狼》捉了多少集？” 
+***
+**【原创出品 未经授权 禁止转载】**  
+**【欢迎微友分享转发 禁止公号等未经授权的转载】**
